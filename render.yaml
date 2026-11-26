@@ -1,0 +1,21 @@
+# One-click free deploy: Render dashboard -> New -> Blueprint -> pick this repo.
+services:
+  - type: web
+    name: studysphere
+    runtime: node
+    plan: free
+    region: singapore # closest free Render region to India; change to oregon/frankfurt for other audiences
+    buildCommand: npm ci && npm run lint && npm test && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: ADS_ENABLED
+        value: "false"
+      - key: TURSO_DATABASE_URL # from `turso db show <name> --url` or the Turso dashboard
+        sync: false
+      - key: TURSO_AUTH_TOKEN # from `turso db tokens create <name>`
+        sync: false
+      - key: APP_URL # your public URL, e.g. https://studysphere.onrender.com
+        sync: false

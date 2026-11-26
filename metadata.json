@@ -1,0 +1,6 @@
+{
+  "name": "StudySphere",
+  "description": "Learn Without Limits. An independent, free academic resource platform for students across India, starting with AKTU B.Tech.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

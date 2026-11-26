@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>StudySphere — Learn Without Limits</title>
+    <meta
+      name="description"
+      content="StudySphere is an independent, 100% free academic resource platform for students across India — covering Classes 3–12 (all boards), B.Tech, B.E., BCA, MCA, MBA, BBA, B.Pharm, B.Sc, B.Com, Diploma, and CBSE Class 12."
+    />
+    <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="StudySphere" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta property="og:title" content="StudySphere — Learn Without Limits" />
+    <meta
+      property="og:description"
+      content="Your studies, all in one sphere. Independent, free academic structure, syllabus explorer, original notes, PYQs, and study tools for Indian students."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('studysphere_theme_v1');
+          var dark = stored === 'dark' || (!stored && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F8FAFC] dark:bg-[#0B1120] text-[#0F172A] dark:text-slate-100 antialiased selection:bg-[#1D4ED8]/15 dark:selection:bg-blue-500/30 selection:text-[#0F172A] dark:selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
